@@ -8,11 +8,82 @@
         tools:context=".MainActivity">
     <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
+            android:layout_height="50dp"
+            android:text="Bienvenue sur l'application de GestionCompteur EDF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteY="-16dp"
+            tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+                android:layout_width="127dp"
+                android:layout_height="118dp"
+                android:layout_gravity="left"
+                android:src="@drawable/edf"
+
+                />
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="476dp">
+
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    android:src="@drawable/identification"
+
+                    />
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    android:src="@drawable/client"
+
+                    />
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/sauvegarde"
+
+                    />
+
+            <ImageButton
+                    android:layout_width="91dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    android:src="@drawable/transfert"
+
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="137dp">
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
