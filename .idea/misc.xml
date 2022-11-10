@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/isabe/IdeaProjects/CompteurEDFGITHUB/app/src/main/res/drawable/ic_launcher_background.xml" value="0.121" />
+        <entry key="..\:/Users/isabe/IdeaProjects/CompteurEDFGITHUB/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.121" />
+        <entry key="app/src/main/res/drawable/client_icon.xml" value="0.1105" />
+        <entry key="app/src/main/res/drawable/donee_ico,.xml" value="0.1105" />
+        <entry key="app/src/main/res/drawable/donnee_icon.xml" value="0.1105" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1645" />
+        <entry key="app/src/main/res/drawable/login_icon.xml" value="0.1105" />
+        <entry key="app/src/main/res/drawable/save_icon.xml" value="0.1105" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19519927536231885" />
       </map>
     </option>
