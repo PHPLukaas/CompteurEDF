@@ -1,4 +1,4 @@
-package modele;
+package com.equipe1.edfcompteur.modele;
 
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
