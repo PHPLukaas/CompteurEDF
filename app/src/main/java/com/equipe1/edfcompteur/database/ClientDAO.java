@@ -1,4 +1,4 @@
-package database;
+package com.equipe1.edfcompteur.database;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.*;
