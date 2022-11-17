@@ -7,9 +7,9 @@ import java.util.Date;
 
 @Entity(tableName = "releve_compteur",
         foreignKeys = {@ForeignKey(entity = Compteur.class,
-                parentColumns = "idCompteur",
-                childColumns = "idCompteurClient",
-                onDelete = ForeignKey.CASCADE)})
+        parentColumns = "idCompteur",
+        childColumns = "idCompteurClient",
+        onDelete = ForeignKey.CASCADE)})
 
 public class ReleveCompteur {
 

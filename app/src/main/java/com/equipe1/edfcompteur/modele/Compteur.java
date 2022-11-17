@@ -7,11 +7,11 @@ import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "compteur",
-        foreignKeys = {@ForeignKey(entity = Client.class,
-                parentColumns = "idClient",
-                childColumns = "idClientCompteur",
-                onDelete = ForeignKey.CASCADE)
-        })
+foreignKeys = {@ForeignKey(entity = Client.class,
+        parentColumns = "idClient",
+        childColumns = "idClientCompteur",
+        onDelete = ForeignKey.CASCADE)
+})
 public class Compteur {
     @PrimaryKey (autoGenerate = true)
     @ColumnInfo (name = "idCompteur")

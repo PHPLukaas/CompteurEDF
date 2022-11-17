@@ -5,38 +5,28 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-// Nom de la table
+
 @Entity(tableName = "client")
-
 public class Client {
-
-    // ID Client
     @PrimaryKey(autoGenerate = true)
     @NonNull
     @ColumnInfo(name ="idClient" )
-    private int identifiantClient;
+    private int identifiantClient ;
 
-    // Nom Client
     @ColumnInfo(name ="nomClient")
-    private String nomClient;
-
-    // Prénom Client
+    private String nomClient ;
     @ColumnInfo(name = "prenomClient")
-    private String prenomClient;
 
-    // Adresse Client
+    private String prenomClient ;
     @ColumnInfo(name = "adresseClient")
-    private String adresseClient;
 
-    // Code Postal Client
+    private String adresseClient ;
     @ColumnInfo(name = "codePostalClient")
-    private String codePostalClient;
-
-    // Ville Client
+    private String codePostalClient ;
     @ColumnInfo(name = "villeClient")
-    private String villeClient;
+    private String villeClient ;
 
-    // Getters et Setters
+
     public int getIdentifiantClient() {
         return identifiantClient;
     }
@@ -85,8 +75,8 @@ public class Client {
         this.villeClient = villeClient;
     }
 
-    // Constructeurs
     public Client() {
+
     }
 
     public Client(int identifiantClient, String nomClient, String prenomClient, String adresseClient, String codePostalClient, String villeClient) {
