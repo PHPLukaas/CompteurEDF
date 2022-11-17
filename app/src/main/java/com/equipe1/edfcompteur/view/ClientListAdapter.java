@@ -36,11 +36,11 @@ public class ClientListAdapter extends ListAdapter<Client, ClientViewHolder> {
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent UpdateClient = new Intent(v.getContext(), UpdateClient.class);
+                /** Intent UpdateClient = new Intent(v.getContext(), UpdateClient.class);
                 UpdateClient.putExtra("idClient", current.getIdentifiantClient());
                 UpdateClient.putExtra("nomClient", current.getNomClient());
                 UpdateClient.putExtra("prenomClient", current.getPrenomClient());
-                v.getContext().startActivity(UpdateClient);
+                v.getContext().startActivity(UpdateClient); **/
             }
         });
     }
