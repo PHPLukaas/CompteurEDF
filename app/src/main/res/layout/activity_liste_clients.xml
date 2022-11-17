@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+            android:id="@+id/id_client_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+            <TextView
+                    android:id="@+id/hint_id_client_card"
+                    android:layout_width="123dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/premier_text"
+                    android:textAppearance="attr/textAppearanceBodyMedium"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="10dp"/>
+
+
+            <TextView
+                    android:id="@+id/hint_nom_client_card"
+                    android:layout_width="123dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/secondary_text"
+                    android:textAppearance="attr/textAppearanceBodyMedium"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="10dp"/>
+
+            <TextView
+                    android:id="@+id/hint_prenom_client_card"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/supporting_text"
+                    android:textAppearance="attr/textAppearanceBodyMedium"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="10dp"/>
+
+            <TextView
+                    android:id="@+id/hint_adresse_client_card"
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/next_text"
+                    android:textAppearance="attr/textAppearanceBodyMedium"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="10dp"/>
+
+            <TextView
+                    android:id="@+id/hint_CodePostale_client_card"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/prochain_text"
+                    android:textAppearance="attr/textAppearanceBodyMedium"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="10dp"/>
+
+
+            <TextView
+                    android:id="@+id/hint_ville_client_card"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/prochain2_text"
+                    android:textAppearance="attr/textAppearanceBodyMedium"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="10dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/ajouterCompteur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/action_1"
+                    style="?attr/borderlessButtonStyle"/>
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/releverCompteur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="@string/action_2"
+                    style="?attr/borderlessButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
