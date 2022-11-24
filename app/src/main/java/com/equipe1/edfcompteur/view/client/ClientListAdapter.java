@@ -40,6 +40,7 @@ public class ClientListAdapter extends ListAdapter<Client, ClientViewHolder> {
         });
     }
 
+
     public static class ClientDiff extends DiffUtil.ItemCallback<Client> {
 
         @Override
