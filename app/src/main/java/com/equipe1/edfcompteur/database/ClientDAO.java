@@ -7,6 +7,7 @@ import com.equipe1.edfcompteur.modele.Client;
 import java.util.List;
 @Dao
 
+
 public interface ClientDAO {
 
 
