@@ -1,3 +1,4 @@
+
 package com.equipe1.edfcompteur.view;
 
 import android.content.Intent;
@@ -40,7 +41,7 @@ public class ClientListAdapter extends ListAdapter<Client, ClientViewHolder> {
                 UpdateClient.putExtra("idClient", current.getIdentifiantClient());
                 UpdateClient.putExtra("nomClient", current.getNomClient());
                 UpdateClient.putExtra("prenomClient", current.getPrenomClient());
-                v.getContext().startActivity(UpdateClient); **/
+                v.getContext().startActivity(UpdateClient);**/
             }
         });
     }
@@ -58,3 +59,4 @@ public class ClientListAdapter extends ListAdapter<Client, ClientViewHolder> {
         }
     }
 }
+

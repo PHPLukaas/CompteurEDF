@@ -44,3 +44,4 @@ public class ClientViewHolder extends RecyclerView.ViewHolder {
         return new ClientViewHolder(view);
     }
 }
+
