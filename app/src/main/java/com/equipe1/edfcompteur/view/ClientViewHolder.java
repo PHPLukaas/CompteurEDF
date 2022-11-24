@@ -33,9 +33,9 @@ public class ClientViewHolder extends RecyclerView.ViewHolder {
         clientItemViewPrenom.setText(textPrenomClient);
 
         compteurClientCard.setOnClickListener(v -> {
-            Intent intent = new Intent(v.getContext(), AddCompteurActivity.class);
+            /** Intent intent = new Intent(v.getContext(), AddCompteurActivity.class);
             intent.putExtra("ID EXTRA", textIdClient);
-            v.getContext().startActivity(intent);
+            v.getContext().startActivity(intent); */
         });
     }
 
