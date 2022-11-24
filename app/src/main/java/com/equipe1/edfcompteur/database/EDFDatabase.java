@@ -8,6 +8,7 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.room.migration.Migration;
 import androidx.sqlite.db.SupportSQLiteDatabase;
+import com.equipe1.edfcompteur.database.client.ClientDAO;
 import com.equipe1.edfcompteur.modele.Client;
 
 import java.util.concurrent.ExecutorService;
