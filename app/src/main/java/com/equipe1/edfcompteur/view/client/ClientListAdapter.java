@@ -12,12 +12,8 @@ import java.util.Objects;
 
 public class ClientListAdapter extends ListAdapter<Client, ClientViewHolder> {
 
-    protected ClientListAdapter(@NonNull DiffUtil.ItemCallback<Client> diffCallback) {
+    public ClientListAdapter(@NonNull DiffUtil.ItemCallback<Client> diffCallback) {
         super(diffCallback);
-    }
-
-    protected ClientListAdapter(@NonNull AsyncDifferConfig<Client> config) {
-        super(config);
     }
 
     @NonNull
