@@ -41,6 +41,8 @@ public class Compteur {
         return idClientCompteur;
     }
 
+
+
     public void setIdClientCompteur(long idClientCompteur) {
         this.idClientCompteur = idClientCompteur;
     }
