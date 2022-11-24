@@ -1,9 +1,10 @@
-package com.equipe1.edfcompteur;
+package com.equipe1.edfcompteur.controller;
 
 import android.content.Intent;
 import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import com.equipe1.edfcompteur.R;
 
 public class MainActivity extends AppCompatActivity {
 
