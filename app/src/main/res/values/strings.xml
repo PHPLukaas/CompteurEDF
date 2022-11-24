@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Compteur EDF</string>
+    <string name="action_2">Ajouter Compteur</string>
+    <string name="action_1">Relever Compteur</string>
+    <string name="supporting_text">Prenom Client</string>
+    <string name="secondary_text">Nom Client</string>
+    <string name="next_text">Adresse Client</string>
+    <string name="prochain_text">Code Postale</string>
+    <string name="prochain_text2">"Ville "</string>
+    <string name="prochain2_text">Ville</string>
+    <string name="premier_text">Identifiant Client</string>
 </resources>
