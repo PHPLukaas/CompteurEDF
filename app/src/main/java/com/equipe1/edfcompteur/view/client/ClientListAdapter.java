@@ -1,7 +1,5 @@
+package com.equipe1.edfcompteur.view.client;
 
-package com.equipe1.edfcompteur.view;
-
-import android.content.Intent;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
@@ -41,7 +39,7 @@ public class ClientListAdapter extends ListAdapter<Client, ClientViewHolder> {
                 UpdateClient.putExtra("idClient", current.getIdentifiantClient());
                 UpdateClient.putExtra("nomClient", current.getNomClient());
                 UpdateClient.putExtra("prenomClient", current.getPrenomClient());
-                v.getContext().startActivity(UpdateClient);**/
+                v.getContext().startActivity(UpdateClient); **/
             }
         });
     }
@@ -59,4 +57,3 @@ public class ClientListAdapter extends ListAdapter<Client, ClientViewHolder> {
         }
     }
 }
-

@@ -1,7 +1,8 @@
-package com.equipe1.edfcompteur.database;
+package com.equipe1.edfcompteur.database.client;
 
 import android.app.Application;
 import androidx.lifecycle.LiveData;
+import com.equipe1.edfcompteur.database.EDFDatabase;
 import com.equipe1.edfcompteur.modele.Client;
 
 import java.util.List;

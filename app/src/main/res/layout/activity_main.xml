@@ -28,7 +28,7 @@
                 android:layout_margin="10dp"
                 android:drawableLeft="@drawable/login_icon"
                 android:padding="10dp"
-                android:text="Indentification"
+                android:text="Identification"
                 android:textColor="@color/white"
                 android:textSize="20sp"
         />
