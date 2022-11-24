@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        View mImageViewIdentification = findViewById(R.id.id_client_card_view);
+        View mImageViewIdentification = findViewById(R.id.btnFacture);
         mImageViewIdentification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
