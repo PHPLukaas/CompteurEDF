@@ -13,12 +13,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        View mImageViewIdentification = findViewById(R.id.btnFacture);
-        mImageViewIdentification.setOnClickListener(new View.OnClickListener() {
+        View mImageReleveCompteur = findViewById(R.id.btnFacture);
+        mImageReleveCompteur.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Identification = new Intent(MainActivity.this, ClientsListActivity.class);
-                startActivity(Identification);
+                Intent ReleveCompteur = new Intent(MainActivity.this, ClientsListActivity.class);
+                startActivity(ReleveCompteur);
             }
         });
 
