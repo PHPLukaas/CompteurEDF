@@ -1,10 +1,10 @@
-package com.equipe1.edfcompteur.view;
+package com.equipe1.edfcompteur.view.client;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
-import com.equipe1.edfcompteur.database.ClientRepository;
+import com.equipe1.edfcompteur.database.client.ClientRepository;
 import com.equipe1.edfcompteur.modele.Client;
 
 import java.util.List;

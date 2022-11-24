@@ -1,6 +1,5 @@
-package com.equipe1.edfcompteur.view;
+package com.equipe1.edfcompteur.view.client;
 
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
