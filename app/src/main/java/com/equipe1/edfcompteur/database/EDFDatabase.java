@@ -9,14 +9,20 @@ import androidx.room.RoomDatabase;
 import androidx.room.migration.Migration;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 import com.equipe1.edfcompteur.database.client.ClientDAO;
+import com.equipe1.edfcompteur.database.compteur.CompteurDAO;
 import com.equipe1.edfcompteur.modele.Client;
+import com.equipe1.edfcompteur.modele.Compteur;
+import com.equipe1.edfcompteur.modele.ReleveCompteur;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-@Database(entities = {Client.class}, version = 1, exportSchema = false)
+@Database(entities = {Client.class, Compteur.class, ReleveCompteur.class}, version = 1, exportSchema = false)
 public abstract class EDFDatabase extends RoomDatabase {
     public abstract ClientDAO clientDao();
+    public abstract CompteurDAO compteurDAO();
+
+    public abstract  ReleveCompteur releveCompteurDAO();
 
     private static volatile EDFDatabase INSTANCE;
     private static final int NUMBER_OF_TREADS = 4;
