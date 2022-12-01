@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Compteur EDF</string>
     <string name="action_2">Ajouter compteur</string>
+    <string name="action_3">Sauvegarder</string>
     <string name="action_1">Relever compteur</string>
     <string name="supporting_text">Prenom Client</string>
     <string name="secondary_text">Nom Client</string>
