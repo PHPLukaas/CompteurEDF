@@ -40,7 +40,7 @@
                 android:layout_margin="10dp"
                 android:drawableLeft="@drawable/client_icon"
                 android:padding="10dp"
-                android:text="Relevé de compteur"
+                android:text="Liste clients"
                 android:textColor="@color/white"
                 android:textSize="20sp"
         />
