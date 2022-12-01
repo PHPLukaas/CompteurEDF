@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".controller.MainActivity">
+
+
+
+
+    <!-- Menu Principal avec 4 boutons -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ID CLIENT"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="NOM CLIENT"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="PRENOM CLIENT"/>
+
+        <Button
+                android:id="@+id/btnParametres"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/save_icon"
+                android:padding="10dp"
+                android:text="Sauvegarde"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                />
+
+        <Button
+                android:id="@+id/btnSuppr"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/save_icon"
+                android:padding="10dp"
+                android:text="SUPPRIMER"
+                android:backgroundTint="@color/red"
+                android:textColor="@color/white"
+
+                android:textSize="15dp"
+                android:layout_marginRight="19dp"
+                />
+
+
+    </LinearLayout>
+</LinearLayout>
