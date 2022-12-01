@@ -17,9 +17,11 @@ public class MainActivity extends AppCompatActivity {
 
         View mImageReleveCompteur = findViewById(R.id.btnFacture);
 
+        // TEST
         Client testClient = new Client(1, "test", "test", "test", "test", "test");
         ClientRepository repoTest = new ClientRepository(getApplication());
         repoTest.insert(testClient);
+        // FIN TEST
         mImageReleveCompteur.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
