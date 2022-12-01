@@ -27,7 +27,7 @@ public class ClientViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void bind(int textIdClient, String textNomClient, String textPrenomClient) {
-        clientItemViewId.setText(textIdClient);
+        clientItemViewId.setText(Integer.toString(textIdClient));
         clientItemViewNom.setText(textNomClient);
         clientItemViewPrenom.setText(textPrenomClient);
 
