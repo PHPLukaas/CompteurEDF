@@ -17,27 +17,18 @@ public class ClientViewHolder extends RecyclerView.ViewHolder {
     private final TextView clientItemViewNom;
     private final TextView clientItemViewPrenom;
 
-    private final MaterialButton clientModifButton;
-
     public ClientViewHolder(@NonNull View itemView) {
         super(itemView);
 
         this.clientItemViewId = itemView.findViewById(R.id.id_client_card);
         this.clientItemViewNom = itemView.findViewById(R.id.hint_nom_client_card);
         this.clientItemViewPrenom = itemView.findViewById(R.id.hint_prenom_client_card);
-        this.clientModifButton = itemView.findViewById(R.id.modifierClient);
     }
 
     public void bind(int textIdClient, String textNomClient, String textPrenomClient) {
         clientItemViewId.setText("Client n°1" + Integer.toString(textIdClient));
         clientItemViewNom.setText(textNomClient);
         clientItemViewPrenom.setText(textPrenomClient);
-
-        clientModifButton.setOnClickListener(v -> {
-            Intent intent = new Intent(v.getContext(), ClientAddActivity.class);
-            intent.putExtra("ID EXTRA", textIdClient);
-            v.getContext().startActivity(intent);
-        });
     }
 
     public static ClientViewHolder create(ViewGroup parent) {
