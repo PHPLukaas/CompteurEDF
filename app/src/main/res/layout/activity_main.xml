@@ -5,7 +5,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".controller.MainActivity">
+        tools:context=".controller.MainActivity"
+        >
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+           android:shape="rectangle">
+        <gradient android:startColor="#FFFFFF"
+                  android:endColor="#00FF00"
+                  android:angle="270" />
+        <corners android:radius="3dp" />
+        <stroke android:width="5px" android:color="#000000" />
+    </shape>
 
     <ImageView
             android:layout_width="100dp"
@@ -27,6 +36,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:drawableLeft="@drawable/login_icon"
+                android:backgroundTint="@color/bleu"
                 android:padding="10dp"
                 android:text="Identification"
                 android:textColor="@color/white"
@@ -39,6 +49,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:drawableLeft="@drawable/client_icon"
+                android:backgroundTint="@color/bleu"
                 android:padding="10dp"
                 android:text="Liste clients"
                 android:textColor="@color/white"
@@ -51,6 +62,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:drawableLeft="@drawable/donnee_icon"
+                android:backgroundTint="@color/bleu"
                 android:padding="10dp"
                 android:text="Import des données"
                 android:textColor="@color/white"
@@ -62,7 +74,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:drawableLeft="@drawable/save_icon"
+                android:drawableLeft="@drawable/save50"
+                android:backgroundTint="@color/bleu"
                 android:padding="10dp"
                 android:text="Sauvegarde"
                 android:textColor="@color/white"
