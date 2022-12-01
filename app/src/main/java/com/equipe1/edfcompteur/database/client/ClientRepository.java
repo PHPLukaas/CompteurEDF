@@ -2,6 +2,7 @@ package com.equipe1.edfcompteur.database.client;
 
 import android.app.Application;
 import androidx.lifecycle.LiveData;
+import androidx.room.Room;
 import com.equipe1.edfcompteur.database.EDFDatabase;
 import com.equipe1.edfcompteur.modele.Client;
 
@@ -15,6 +16,7 @@ public class ClientRepository {
     public ClientRepository(Application application) {
         EDFDatabase db = EDFDatabase.getDatabase(application);
         mClientDao = db.clientDao();
+
     }
     public LiveData<List<Client>> getAllClients() {
         mAllClients = mClientDao.getAlphabetizedClients();

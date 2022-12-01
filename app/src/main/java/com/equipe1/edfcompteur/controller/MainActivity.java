@@ -16,15 +16,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         View mImageReleveCompteur = findViewById(R.id.btnFacture);
+
+        Client testClient = new Client(1, "test", "test", "test", "test", "test");
+        ClientRepository repoTest = new ClientRepository(getApplication());
+        repoTest.insert(testClient);
         mImageReleveCompteur.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Client testClient = new Client(0, "test", "test", "test", "test", "test");
-                ClientRepository repoTest = new ClientRepository(getApplication());
-                repoTest.insert(testClient);
-
-
                 Intent ReleveCompteur = new Intent(MainActivity.this, ClientsListActivity.class);
                 startActivity(ReleveCompteur);
             }
