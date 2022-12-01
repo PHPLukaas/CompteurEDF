@@ -28,7 +28,5 @@ public class ClientsListActivity extends AppCompatActivity {
         clientViewModel.getAllClients().observe(this, clientListAdapter::submitList);
 
 
-
-
     }
 }
