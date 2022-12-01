@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Client testClient = new Client(1, "test", "test", "test", "test", "test");
+                Client testClient = new Client(0, "test", "test", "test", "test", "test");
                 ClientRepository repoTest = new ClientRepository(getApplication());
                 repoTest.insert(testClient);
 
