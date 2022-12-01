@@ -7,9 +7,6 @@
         android:orientation="vertical"
         tools:context=".controller.MainActivity">
 
-
-
-
     <!-- Menu Principal avec 4 boutons -->
     <LinearLayout
             android:layout_width="match_parent"
@@ -18,45 +15,106 @@
 
 
         <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/idClient"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="ID CLIENT"/>
 
         <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="NOM CLIENT"/>
 
         <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/prenom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="PRENOM CLIENT"/>
 
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/adresse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ADRESSE CLIENT"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/codePostal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CODE POSTAL CLIENT"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ville"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="VILLE CLIENT"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+            <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:drawableLeft="@drawable/sauvegarder"
+                    android:padding="0dp"
+                    android:text="Sauvegarder"
+                    android:backgroundTint="@color/green"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+
+                    />
+
+            <Button
+                    android:id="@+id/btnSuppr"
+                    android:layout_toRightOf="@+id/btnAdd"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:drawableLeft="@drawable/supprimer"
+                    android:padding="0dp"
+                    android:text="SUPPRIMER"
+                    android:backgroundTint="@color/red"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+
+
+                    />
+
+        </LinearLayout>
+
         <Button
-                android:id="@+id/btnParametres"
-                android:layout_width="192dp"
+                android:id="@+id/btnListeCompteur"
+                android:layout_width="390dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:drawableLeft="@drawable/save_icon"
-                android:padding="10dp"
-                android:text="Sauvegarde"
+                android:padding="0dp"
+                android:text="Liste Compteur"
+                android:backgroundTint="@color/pourpre_moyen"
                 android:textColor="@color/white"
                 android:textSize="15dp"
+
                 />
 
         <Button
-                android:id="@+id/btnSuppr"
-                android:layout_width="192dp"
+                android:id="@+id/btnAjoutCompteur"
+                android:layout_toRightOf="@+id/btnAdd"
+                android:layout_width="390dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:drawableLeft="@drawable/save_icon"
-                android:padding="10dp"
-                android:text="SUPPRIMER"
-                android:backgroundTint="@color/red"
+                android:padding="0dp"
+                android:text="Ajouter Compteur"
+                android:backgroundTint="@color/pourpre_moyen"
                 android:textColor="@color/white"
-
                 android:textSize="15dp"
-                android:layout_marginRight="19dp"
+
+
                 />
 
 
