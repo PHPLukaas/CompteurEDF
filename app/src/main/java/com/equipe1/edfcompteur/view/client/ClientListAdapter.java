@@ -1,11 +1,13 @@
 package com.equipe1.edfcompteur.view.client;
 
+import android.content.Intent;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.AsyncDifferConfig;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
+import com.equipe1.edfcompteur.controller.ClientAddActivity;
 import com.equipe1.edfcompteur.modele.Client;
 
 import java.util.Objects;
@@ -31,11 +33,11 @@ public class ClientListAdapter extends ListAdapter<Client, ClientViewHolder> {
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /** Intent UpdateClient = new Intent(v.getContext(), UpdateClient.class);
+                Intent UpdateClient = new Intent(v.getContext(), ClientAddActivity.class);
                 UpdateClient.putExtra("idClient", current.getIdentifiantClient());
                 UpdateClient.putExtra("nomClient", current.getNomClient());
                 UpdateClient.putExtra("prenomClient", current.getPrenomClient());
-                v.getContext().startActivity(UpdateClient); **/
+                v.getContext().startActivity(UpdateClient);
             }
         });
     }
