@@ -3,6 +3,7 @@ package com.equipe1.edfcompteur.controller;
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.equipe1.edfcompteur.R;
@@ -113,6 +114,30 @@ public class ClientAddActivity extends AppCompatActivity {
                     Client client = new Client(idClient, nomClient, prenomClient, adresseClient, codePostalClient, villeClient);
 
                     EDFDatabase.databaseWriteExecutor.execute(() -> mClientViewModel.update(client));
+                    Toast toast = Toast.makeText(v.getContext(), "Client édité", 3000);
+                    toast.show();
+                    finish();
+
+                }
+            });
+
+            suppClientView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent replyIntent = new Intent();
+
+                    int idClient = Integer.parseInt(idClientView.getText().toString());
+                    String nomClient = nomClientView.getText().toString();
+                    String prenomClient = prenomClientView.getText().toString();
+                    String adresseClient = adresseClientView.getText().toString();
+                    String codePostalClient = codePostalClientView.getText().toString();
+                    String villeClient = villeClientView.getText().toString();
+
+                    Client client = new Client(idClient, nomClient, prenomClient, adresseClient, codePostalClient, villeClient);
+
+                    EDFDatabase.databaseWriteExecutor.execute(() -> mClientViewModel.delete(client));
+                    Toast toast = Toast.makeText(v.getContext(), "Client supprimé", 3000);
+                    toast.show();
                     finish();
 
                 }
@@ -167,6 +192,8 @@ public class ClientAddActivity extends AppCompatActivity {
 
                 }
             });
+
+
 
         }
 
