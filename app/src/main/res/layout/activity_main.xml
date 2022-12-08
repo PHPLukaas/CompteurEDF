@@ -5,7 +5,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".controller.MainActivity">
+        tools:context=".controller.MainActivity"
+        >
+
 
     <ImageView
             android:layout_width="100dp"
@@ -27,6 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:drawableLeft="@drawable/login_icon"
+                android:backgroundTint="@color/bleu"
                 android:padding="10dp"
                 android:text="Identification"
                 android:textColor="@color/white"
@@ -39,6 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:drawableLeft="@drawable/client_icon"
+                android:backgroundTint="@color/bleu"
                 android:padding="10dp"
                 android:text="Liste clients"
                 android:textColor="@color/white"
@@ -51,6 +55,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:drawableLeft="@drawable/donnee_icon"
+                android:backgroundTint="@color/bleu"
                 android:padding="10dp"
                 android:text="Import des données"
                 android:textColor="@color/white"
@@ -62,7 +67,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:drawableLeft="@drawable/save_icon"
+                android:drawableLeft="@drawable/save50"
+                android:backgroundTint="@color/bleu"
                 android:padding="10dp"
                 android:text="Sauvegarde"
                 android:textColor="@color/white"
