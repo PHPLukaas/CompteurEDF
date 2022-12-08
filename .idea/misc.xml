@@ -10,7 +10,9 @@
         <entry key="..\:/Users/isabe/IdeaProjects/CompteurEDFGITHUB/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/isabe/IdeaProjects/CompteurEDFGITHUB/app/src/main/res/layout/cardclient.xml" value="0.14375" />
         <entry key="..\:/Users/isabe/IdeaProjects/CompteurEDFGITHUB/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.121" />
-        <entry key="..\:/Users/simon/IdeaProjects/EDF/app/src/main/res/layout/activity_client_add.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/simon/IdeaProjects/EDF/app/src/main/res/drawable/ajoutclient.xml" value="0.131" />
+        <entry key="..\:/Users/simon/IdeaProjects/EDF/app/src/main/res/drawable/ajoutclient_blanc.xml" value="0.131" />
+        <entry key="..\:/Users/simon/IdeaProjects/EDF/app/src/main/res/layout/activity_client_add.xml" value="0.264" />
         <entry key="..\:/Users/simon/IdeaProjects/EDF/app/src/main/res/layout/activity_clients_list.xml" value="0.264" />
         <entry key="..\:/Users/simon/IdeaProjects/EDF/app/src/main/res/layout/activity_liste_clients.xml" value="0.264" />
         <entry key="..\:/Users/simon/IdeaProjects/EDF/app/src/main/res/layout/activity_main.xml" value="0.264" />

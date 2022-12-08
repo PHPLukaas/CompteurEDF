@@ -28,6 +28,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:contentDescription="ajouter"
-            android:src="@drawable/ajoutclient"/>
+            android:backgroundTint="@color/orange"
+            android:src="@drawable/ajoutclient_blanc"
+            android:drawableTint="@color/white"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
