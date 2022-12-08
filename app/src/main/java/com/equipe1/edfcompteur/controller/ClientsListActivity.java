@@ -42,6 +42,7 @@ public class ClientsListActivity extends AppCompatActivity {
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(view -> {
             Intent intent = new Intent(ClientsListActivity.this, ClientAddActivity.class);
+            intent.putExtra("action", "create");
             NewClientActivityResultLauncher.launch(intent);
         });
 
@@ -56,8 +57,9 @@ public class ClientsListActivity extends AppCompatActivity {
 
                             if (result.getResultCode() == RESULT_OK) {
                                 assert result.getData() != null;
-                                Client client = new Client(1,
-                                        //result.getData().getStringExtra(String.valueOf(ClientAddActivity.EXTRA_REPLY_IDCLIENT)),
+
+                                Client client = new Client(
+                                        0,
                                         result.getData().getStringExtra(ClientAddActivity.EXTRA_REPLY_NOM),
                                         result.getData().getStringExtra(ClientAddActivity.EXTRA_REPLY_PRENOM),
                                         result.getData().getStringExtra(ClientAddActivity.EXTRA_REPLY_ADRESSE),
@@ -66,12 +68,15 @@ public class ClientsListActivity extends AppCompatActivity {
                                 );
 
                                 EDFDatabase.databaseWriteExecutor.execute(() -> mClientViewModel.insert(client));
-
+                                clientInsere();
 
                             } else {
 
                             }
                         }
+
+                        // onActivityResult de la modification d'un client
+
                     });
 
     private void clientInsere() {

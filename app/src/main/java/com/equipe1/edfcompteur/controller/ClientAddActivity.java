@@ -1,10 +1,13 @@
 package com.equipe1.edfcompteur.controller;
 
 import android.content.Intent;
+import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.equipe1.edfcompteur.R;
+import com.equipe1.edfcompteur.database.EDFDatabase;
+import com.equipe1.edfcompteur.modele.Client;
 import com.equipe1.edfcompteur.view.client.ClientViewModel;
 import com.google.android.material.textfield.TextInputEditText;
 
@@ -29,6 +32,10 @@ public class ClientAddActivity extends AppCompatActivity {
     private Button suppClientView;
     private Button saveClientView;
 
+    private Button btnListeCompteur;
+
+    private Button btnAjoutCompteur;
+
     
 
     private ClientViewModel mClientViewModel;
@@ -41,6 +48,10 @@ public class ClientAddActivity extends AppCompatActivity {
         this.codePostalClientView = codePostalClientView;
         this.villeClientView = villeClientView;
         this.mClientViewModel = mClientViewModel;
+
+    }
+
+    public ClientAddActivity(){
 
     }
 
@@ -63,7 +74,8 @@ public class ClientAddActivity extends AppCompatActivity {
         villeClientView = findViewById(R.id.ville);
         suppClientView = findViewById(R.id.btnSuppr);
         saveClientView = findViewById(R.id.btnAdd);
-
+        btnListeCompteur = findViewById(R.id.btnListeCompteur);
+        btnAjoutCompteur = findViewById(R.id.btnAjoutCompteur);
 
 
         // Si on modifie un client, on récupère les données du client
@@ -85,11 +97,32 @@ public class ClientAddActivity extends AppCompatActivity {
             codePostalClientView.setText(codePostalClient);
             villeClientView.setText(villeClient);
 
+            mClientViewModel = new ClientViewModel(getApplication());
+            saveClientView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent replyIntent = new Intent();
+
+                    int idClient = Integer.parseInt(idClientView.getText().toString());
+                    String nomClient = nomClientView.getText().toString();
+                    String prenomClient = prenomClientView.getText().toString();
+                    String adresseClient = adresseClientView.getText().toString();
+                    String codePostalClient = codePostalClientView.getText().toString();
+                    String villeClient = villeClientView.getText().toString();
+
+                    Client client = new Client(idClient, nomClient, prenomClient, adresseClient, codePostalClient, villeClient);
+
+                    EDFDatabase.databaseWriteExecutor.execute(() -> mClientViewModel.update(client));
+                    finish();
+
+                }
+            });
+
 
 
         }else if (actionMode.equals("create")) {
             // Si on créer un client, on vide les champs
-            idClientView.setText("");
+            idClientView.setText("1");
             nomClientView.setText("");
             prenomClientView.setText("");
             adresseClientView.setText("");
@@ -98,14 +131,47 @@ public class ClientAddActivity extends AppCompatActivity {
 
             // On désactive le champ idClient
             idClientView.setEnabled(false);
+            // On cache le bouton supprimer
+            suppClientView.setVisibility(View.GONE);
 
             // On désactive le bouton supprimer
             suppClientView.setEnabled(false);
+            // On cache le bouton supprimer
+            suppClientView.setVisibility(View.GONE);
 
+            // On cache les boutons de gestion des compteurs
+
+            btnListeCompteur.setVisibility(View.GONE);
+            btnAjoutCompteur.setVisibility(View.GONE);
+
+            saveClientView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent replyIntent = new Intent();
+
+                    int idClient = Integer.parseInt(idClientView.getText().toString());
+                    String nomClient = nomClientView.getText().toString();
+                    String prenomClient = prenomClientView.getText().toString();
+                    String adresseClient = adresseClientView.getText().toString();
+                    String codePostalClient = codePostalClientView.getText().toString();
+                    String villeClient = villeClientView.getText().toString();
+
+                    replyIntent.putExtra(String.valueOf(EXTRA_REPLY_IDCLIENT), idClient);
+                    replyIntent.putExtra(EXTRA_REPLY_NOM, nomClient);
+                    replyIntent.putExtra(EXTRA_REPLY_PRENOM, prenomClient);
+                    replyIntent.putExtra(EXTRA_REPLY_ADRESSE, adresseClient);
+                    replyIntent.putExtra(EXTRA_REPLY_CODEPOSTAL, codePostalClient);
+                    replyIntent.putExtra(EXTRA_REPLY_VILLE, villeClient);
+                    setResult(RESULT_OK, replyIntent);
+                    finish();
+
+                }
+            });
 
         }
 
 
-
     }
+
+
 }

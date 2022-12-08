@@ -21,6 +21,10 @@ public class MainActivity extends AppCompatActivity {
         Client testClient = new Client(1, "test", "test", "test", "test", "test");
         ClientRepository repoTest = new ClientRepository(getApplication());
         repoTest.insert(testClient);
+
+        Client testClient1 = new Client(2, "Lukas", "LOL", "test", "test", "test");
+        ClientRepository repoTest1 = new ClientRepository(getApplication());
+        repoTest1.insert(testClient1);
         // FIN TEST
         mImageReleveCompteur.setOnClickListener(new View.OnClickListener() {
             @Override
