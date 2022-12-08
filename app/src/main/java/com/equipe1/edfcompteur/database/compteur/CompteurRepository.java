@@ -22,6 +22,8 @@ public class CompteurRepository {
         mCompteurDao = db.compteurDAO();
 
     }
+
+
     public LiveData<List<Compteur>> getAllCompteur() {
         mAllCompteur= mCompteurDao.getAlphabetizedClients();
         return mAllCompteur;

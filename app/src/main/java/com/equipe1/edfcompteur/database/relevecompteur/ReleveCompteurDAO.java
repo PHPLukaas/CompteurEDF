@@ -21,7 +21,7 @@ public interface ReleveCompteurDAO {
     @Query("DELETE FROM releve_compteur")
     void deleleAll();
 
-    @Query("SELECT idCompteur , idClientCompteur FROM compteur ORDER BY compteur.idCompteur ASC")
+    @Query("SELECT idReleve , releve , situationReleve , dateReleve FROM RELEVE_COMPTEUR   ")
     LiveData<List<ReleveCompteur>> getAlphabetizedClients();
 
 
